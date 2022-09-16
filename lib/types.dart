@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of fall_dialogs;
 
 enum DialogType {
   info,
