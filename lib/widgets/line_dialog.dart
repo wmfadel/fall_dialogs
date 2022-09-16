@@ -1,9 +1,9 @@
 part of fall_dialogs;
 
-extension Dialogs on ScaffoldMessengerState {
+extension Dialogs on BuildContext {
   showLineDialog({required DialogType type, required String message}) {
-    clearSnackBars();
-    showSnackBar(
+    ScaffoldMessenger.of(this).clearSnackBars();
+    ScaffoldMessenger.of(this).showSnackBar(
       SnackBar(
         clipBehavior: Clip.none,
         backgroundColor: Colors.transparent,
